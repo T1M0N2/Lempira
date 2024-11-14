@@ -1,5 +1,5 @@
-// Countdown-Timer - Zielt auf 4 Wochen von heute
-const countdownDate = new Date().getTime() + (4 * 7 * 24 * 60 * 60 * 1000);
+// Countdown-Zieldatum: 1. Januar 2025, 00:00 Uhr
+const countdownDate = new Date("January 1, 2025 00:00:00").getTime();
 
 function updateCountdown() {
     const now = new Date().getTime();

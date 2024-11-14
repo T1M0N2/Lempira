@@ -21,6 +21,15 @@ body {
     padding: 20px;
 }
 
+.release-date {
+    font-size: 1rem;
+    color: #000000;
+    margin-top: 10px;
+    text-align: center;
+    font-weight: 500;
+}
+
+
 /* Logo-Bereich */
 .logo-container {
     margin-bottom: 20px;
