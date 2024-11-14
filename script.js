@@ -1,5 +1,3 @@
-// script.js - Countdown Timer
-
 // Countdown-Zieldatum: 1. Januar 2025, 00:00 Uhr
 const countdownDate = new Date("January 1, 2025 00:00:00").getTime();
 
