@@ -1,4 +1,4 @@
-/* Grundstil */
+/* style.css - Grundstil */
 * {
     margin: 0;
     padding: 0;
@@ -13,6 +13,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
+    text-align: center;
 }
 
 .coming-soon-container {
@@ -25,10 +26,8 @@ body {
     font-size: 1rem;
     color: #000000;
     margin-top: 10px;
-    text-align: center;
     font-weight: 500;
 }
-
 
 /* Logo-Bereich */
 .logo-container {
@@ -64,6 +63,7 @@ body {
     justify-content: center;
     gap: 15px;
     margin: 20px 0;
+    flex-wrap: wrap;
 }
 
 .countdown div {
@@ -75,6 +75,7 @@ body {
     border-radius: 10px;
     width: 60px;
     text-align: center;
+    min-width: 50px;
 }
 
 span {
@@ -83,14 +84,51 @@ span {
     font-size: 1em;
 }
 
-/* Kontaktinfo */
-.contact-info {
-    margin-top: 20px;
-    font-size: 1em;
+/* Media Queries für Mobilgeräte */
+@media (max-width: 768px) {
+    .text-container h1 {
+        font-size: 2.5em;
+    }
+    
+    .text-container p {
+        font-size: 1em;
+    }
+
+    .text-container h2 {
+        font-size: 1.8em;
+    }
+
+    .countdown div {
+        font-size: 1.5em;
+        padding: 8px;
+        width: 50px;
+    }
+    
+    span {
+        font-size: 0.9em;
+    }
 }
 
-.contact-info a {
-    color: #000000;
-    text-decoration: none;
-    font-weight: bold;
+@media (max-width: 480px) {
+    .text-container h1 {
+        font-size: 2em;
+    }
+    
+    .text-container p {
+        font-size: 0.9em;
+    }
+
+    .text-container h2 {
+        font-size: 1.5em;
+    }
+
+    .countdown div {
+        font-size: 1.3em;
+        padding: 6px;
+        width: 45px;
+    }
+    
+    span {
+        font-size: 0.8em;
+    }
 }
